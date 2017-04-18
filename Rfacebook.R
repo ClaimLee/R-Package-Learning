@@ -3,7 +3,7 @@ setwd("F:/Rfacebook/")
 library(Rfacebook)
 # library(rvest)
 
-# fb_oauth <- fbOAuth(app_id="170372696719691", app_secret="d51e105a45c3eb9611aa7ece6c44c686", extended_permissions = TRUE)
+# fb_oauth <- fbOAuth(app_id="youridhere", app_secret="yoursecrethere", extended_permissions = TRUE)
 # 
 # save(fb_oauth, file="fb_oauth")
 
@@ -13,7 +13,7 @@ load("fb_oauth")
 # function getUsers() -----------------------------------------------------
 # Extract information about one or more facebook users
 # Here is my personal facebook profile
-me <- getUsers(users = "648232078686436", token = fb_oauth, private_info = T)
+me <- getUsers(users = "youruserid", token = fb_oauth, private_info = T)
 me
 
 # function getLikes -------------------------------------------------------
